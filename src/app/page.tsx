@@ -246,7 +246,7 @@ export default function Home() {
               </div>
               <div className="relative mt-4 aspect-[4/3] overflow-hidden rounded-2xl bg-brand-100">
                 <Image
-                  src="/resort.jpg"
+                  src="/jaipur.avif"
                   alt="Seaside resort cabanas overlooking the ocean at sunset"
                   fill
                   sizes="(max-width: 1024px) 0px, 28rem"
@@ -351,7 +351,7 @@ export default function Home() {
                   <div className="mt-auto pt-6">
                     <div className="relative mb-4 aspect-[16/10] overflow-hidden rounded-2xl">
                       <Image
-                        src="/hero.jpg"
+                        src="/jalmahal.avif"
                         alt="Tropical resort with a pool surrounded by palm trees and mountains"
                         fill
                         sizes="(max-width: 1024px) 100vw, 22rem"

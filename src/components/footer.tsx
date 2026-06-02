@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo } from "./logo";
-import { WHATSAPP_URL, WHATSAPP_DISPLAY } from "@/lib/contact";
+import { WHATSAPP_URL, WHATSAPP_DISPLAY, INSTAGRAM_URL } from "@/lib/contact";
 
 const stayTypes = ["Hotels", "Villas", "Farmhouses", "Resorts", "Unique stays"];
 const occasions = [
@@ -26,17 +26,37 @@ export function Footer() {
               carefully selected properties for every occasion and budget.
             </p>
             <div className="mt-6 flex gap-3">
-              {["instagram", "facebook", "twitter"].map((s) => (
-                <span
-                  key={s}
-                  className="grid h-9 w-9 place-items-center rounded-full border border-white/10 bg-white/5 text-brand-100/80 transition-colors hover:bg-white/10"
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow BookMeStays on Instagram"
+                className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-white/5 text-brand-100/80 transition-colors hover:bg-gradient-to-br hover:from-[#f58529] hover:via-[#dd2a7b] hover:to-[#8134af] hover:text-white"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  className="h-5 w-5"
                   aria-hidden="true"
                 >
-                  <span className="text-[11px] font-semibold uppercase">
-                    {s[0]}
-                  </span>
-                </span>
-              ))}
+                  <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" />
+                  <circle cx="12" cy="12" r="4.2" />
+                  <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat with BookMeStays on WhatsApp"
+                className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-white/5 text-brand-100/80 transition-colors hover:bg-[#25D366] hover:text-white"
+              >
+                <svg viewBox="0 0 32 32" fill="currentColor" className="h-5 w-5" aria-hidden="true">
+                  <path d="M16.04 4C9.96 4 5.02 8.94 5.02 15.02c0 1.95.51 3.86 1.48 5.54L4.9 27.1l6.7-1.75a11 11 0 0 0 4.43.93h.01c6.08 0 11.02-4.94 11.02-11.02C27.06 8.94 22.12 4 16.04 4Zm5.04 13.33c-.28-.14-1.63-.8-1.88-.9-.25-.09-.43-.14-.62.14-.18.28-.71.9-.87 1.08-.16.18-.32.2-.6.07-.28-.14-1.17-.43-2.22-1.37-.82-.73-1.38-1.64-1.54-1.92-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.49.14-.16.18-.28.28-.46.09-.18.05-.35-.02-.49-.07-.14-.62-1.5-.85-2.05-.22-.54-.45-.47-.62-.48l-.53-.01c-.18 0-.48.07-.74.35-.25.28-.96.94-.96 2.3 0 1.35.99 2.66 1.12 2.84.14.18 1.95 2.97 4.72 4.16.66.28 1.17.45 1.57.58.66.21 1.26.18 1.74.11.53-.08 1.63-.67 1.86-1.31.23-.64.23-1.2.16-1.31-.06-.12-.25-.19-.53-.33Z" />
+                </svg>
+              </a>
             </div>
           </div>
 
