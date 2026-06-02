@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { WHATSAPP_URL } from "@/lib/contact";
 
 /* ---------------------------------- data --------------------------------- */
@@ -243,29 +244,18 @@ export default function Home() {
                   ★ Handpicked
                 </span>
               </div>
-              <div className="mt-4 aspect-[4/3] overflow-hidden rounded-2xl bg-gradient-to-br from-brand-100 via-brand-50 to-sand-100">
-                <div className="relative h-full w-full">
-                  <div className="absolute inset-0 bg-grid opacity-60" />
-                  <svg
-                    viewBox="0 0 200 150"
-                    className="absolute inset-x-0 bottom-0 w-full text-brand-300"
-                    preserveAspectRatio="none"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M0 110 Q40 70 80 95 T160 80 L200 100 V150 H0 Z"
-                      fill="currentColor"
-                      opacity="0.5"
-                    />
-                    <path
-                      d="M0 125 Q50 100 100 118 T200 112 V150 H0 Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                  <span className="absolute left-4 top-4 grid h-12 w-12 place-items-center rounded-full bg-sand-300/80 text-2xl">
-                    🏝️
-                  </span>
-                </div>
+              <div className="relative mt-4 aspect-[4/3] overflow-hidden rounded-2xl bg-brand-100">
+                <Image
+                  src="/resort.jpg"
+                  alt="Seaside resort cabanas overlooking the ocean at sunset"
+                  fill
+                  sizes="(max-width: 1024px) 0px, 28rem"
+                  className="object-cover"
+                  priority
+                />
+                <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-brand-700 shadow-sm backdrop-blur">
+                  🏝️ Seaside
+                </span>
               </div>
               <h3 className="mt-4 font-display text-xl font-semibold text-brand-900">
                 Seaside Villa Retreat
@@ -359,6 +349,15 @@ export default function Home() {
                 </p>
                 {i === 0 && (
                   <div className="mt-auto pt-6">
+                    <div className="relative mb-4 aspect-[16/10] overflow-hidden rounded-2xl">
+                      <Image
+                        src="/hero.jpg"
+                        alt="Tropical resort with a pool surrounded by palm trees and mountains"
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 22rem"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
                     <div className="rounded-2xl bg-brand-50 p-4 text-sm text-brand-700">
                       <p className="font-semibold">Not sure where to start?</p>
                       <p className="mt-1 text-brand-700/80">
