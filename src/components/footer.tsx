@@ -151,7 +151,7 @@ export function Footer() {
         </div>
 
         <div className="mt-6 text-center text-xs text-brand-100/60">
-          <p>Managed by - My Scapes Bookings pvt.Ltd</p>
+          <p>Managed by - MYSCAPES BOOKINGS PRIVATE LIMITED</p>
         </div>
       </div>
     </footer>
