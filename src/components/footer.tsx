@@ -149,6 +149,10 @@ export function Footer() {
             Crafted for travelers who love a perfect stay.
           </p>
         </div>
+
+        <div className="mt-6 text-center text-xs text-brand-100/60">
+          <p>Managed by - My Scapes Bookings pvt.Ltd</p>
+        </div>
       </div>
     </footer>
   );
